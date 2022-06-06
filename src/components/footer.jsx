@@ -1,6 +1,7 @@
 import logo from '../components/images/businessInitials.png'
 import { IoCallSharp } from 'react-icons/io5'
 import { MdEmail } from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -19,17 +20,17 @@ const Footer = () => {
                             <div className="lg:w-1/6 md:w-1/2 w-full px-4">
                                 <h2 className="title-font font-bold text-white tracking-widest text-md mb-3">Site Map</h2>
                                 <nav className="list-none mb-10">
-                                    <li>
-                                        <a className="text-white hover:text-red-300" href="https://react-icons.github.io/react-icons/icons?name=gi">Home</a>
+                                    <li className="text-white hover:text-red-300">
+                                        <Link to="/">Home</Link>
                                     </li>
-                                    <li>
-                                        <a className="text-white hover:text-red-300" href="https://react-icons.github.io/react-icons/icons?name=gi">About Us</a>
+                                    <li className="text-white hover:text-red-300">
+                                        <Link to="/about">About Us</Link>
                                     </li>
-                                    <li>
-                                        <a className="text-white hover:text-red-300" href="https://react-icons.github.io/react-icons/icons?name=gi">Support</a>
+                                    <li className="text-white hover:text-red-300">
+                                        <Link to="/support">Support</Link>
                                     </li>
-                                    <li>
-                                        <a className="text-white hover:text-red-300" href="https://react-icons.github.io/react-icons/icons?name=gi">Services</a>
+                                    <li className="text-white hover:text-red-300">
+                                        <Link to="/services">Services</Link>
                                     </li>
                                 </nav>
                             </div>
@@ -37,8 +38,8 @@ const Footer = () => {
                                 <h2 className="title-font font-bold text-white tracking-widest text-md mb-3 flex justify-center">Contact Us</h2>
                                 <nav className="list-none mb-10">
                                     <table className="flex justify-center"><tbody>
-                                        <a className="text-white hover:text-red-300 flex" href="tel:+6022901586"><IoCallSharp />: 602-290-1586</a>
-                                        <a className="text-white hover:text-red-300 flex" href="mailto:Dave@QuikTekComputer.com"><MdEmail />: @Dave</a>
+                                        <tr><td><a className="text-white hover:text-red-300 flex" href="tel:+6022901586"><IoCallSharp />: 602-290-1586</a></td></tr>
+                                        <tr><td><a className="text-white hover:text-red-300 flex" href="mailto:Dave@QuikTekComputer.com"><MdEmail />: @Dave</a></td></tr>
                                     </tbody>
                                     </table>
                                 </nav>
@@ -57,8 +58,8 @@ const Footer = () => {
                             </div>
                             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                                 <h2 className="title-font font-bold text-white tracking-widest text-md mb-3">Location</h2>
-                                <nav className="list-none mb-10 flex justify-center">
-                                    <iframe title="storeLocation" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13289.133522244032!2d-112.186368!3d33.6238936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d77990170c86477!2sQuikTek%20Computer%20Repair%20and%20Upgrade!5e0!3m2!1sen!2sus!4v1654416978812!5m2!1sen!2sus" width="200" height="200" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">Frame</iframe>
+                                <nav className="list-none mb-2 flex justify-center">
+                                    <iframe title="storeLocation" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13289.133522244032!2d-112.186368!3d33.6238936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d77990170c86477!2sQuikTek%20Computer%20Repair%20and%20Upgrade!5e0!3m2!1sen!2sus!4v1654416978812!5m2!1sen!2sus" width="150" height="150" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">Frame</iframe>
                                 </nav>
                             </div>
                         </div>
